@@ -56,8 +56,8 @@ namespace ShalicoUtils
             }
             else
             {
-                result = s_poolRoot._next;
-                s_poolRoot._next = result._next;
+                result = s_poolRoot;
+                s_poolRoot = s_poolRoot._next;
                 result._next = null;
             }
 
