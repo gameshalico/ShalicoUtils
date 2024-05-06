@@ -37,7 +37,7 @@ namespace ShalicoUtils
         }
 
         [MustUseReturnValue]
-        public PriorityValueHandle<T> Register(int priority = 0, T value = default)
+        public PriorityValueHandle<T> Register(T value, int priority = 0)
         {
             var buffer = PriorityValueHandler<T>.Rent(this, priority, value);
 

@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace ShalicoUtils
 {
-    public static class IntValueRangeExtensions
+    public static class ValueRangeIntExtensions
     {
         public static ValueRange<float> ToFloatRange(this ValueRange<int> range)
         {
