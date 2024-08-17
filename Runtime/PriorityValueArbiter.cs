@@ -51,7 +51,7 @@ namespace ShalicoUtils
         {
             var index = 0;
             for (; index < _handlers.Count; index++)
-                if (_handlers[index].Priority > buffer.Priority)
+                if (_handlers[index].Priority < buffer.Priority)
                     break;
 
             _handlers.Insert(index, buffer);
